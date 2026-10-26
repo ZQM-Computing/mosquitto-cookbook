@@ -15,7 +15,7 @@ A **Mosquitto cookbook** for MQTT broker setup, listeners, and pub/sub patterns.
 
 ## Repository role and status
 
-**Status:** Active, public — seeding. Pattern passes land in follow-up work from fleet-verified setups; the tables below list what is planned, not what is already written.
+**Status:** Active, public — first pattern pass written (design-only, gate 1 target; runtime validation pending).
 
 **What this repository is:** Mosquitto patterns — see the table below.
 
@@ -33,20 +33,23 @@ Engineers who move sensor and service messages over MQTT.
 - An MQTT client for the pub/sub passes
 - Bash or PowerShell
 
-## Patterns (planned)
+## Patterns
 
-| # | Example | What it will demonstrate |
-|---|---------|--------------------------|
-| 01 | `01-pub-sub` | Publishing and subscribing across topics |
-| 02 | `02-listener-ports` | Listener configuration, including excluded-port workarounds |
-| 03 | `03-auth-note` | Authentication options and the open fleet decision |
-| 04 | `04-nodered-pairing` | Pairing with Node-RED flows (see nodered-cookbook) |
+| # | Example | Status | What it demonstrates |
+|---|---------|--------|----------------------|
+| 01 | [01-pub-sub](examples/01-pub-sub/README.md) | Written | Publishing and subscribing across topics |
+| 02 | [02-listener-ports](examples/02-listener-ports/README.md) | Written | Listener configuration, including excluded-port workarounds |
+| 03 | [03-auth-note](examples/03-auth-note/README.md) | Written | Authentication options and the open fleet decision |
+| 04 | [04-nodered-pairing](examples/04-nodered-pairing/README.md) | Written | Pairing with Node-RED flows (see nodered-cookbook) |
 
 ## Repository layout
 
 ```text
 mosquitto-cookbook/
-├── examples/          # pattern passes, landing in follow-up work
+├── examples/01-pub-sub/
+├── examples/02-listener-ports/
+├── examples/03-auth-note/
+├── examples/04-nodered-pairing/
 ├── README.md
 └── LICENSE
 ```

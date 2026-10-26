@@ -1,0 +1,1 @@
+[{"broker":"test-broker-sketch","id":"mqtt-in-sketch","qos":"1","topic":"sensors/#","type":"mqtt in","wires":[["function-sketch"]]},{"func":"msg.payload = JSON.parse(msg.payload);\nreturn msg;","id":"function-sketch","type":"function","wires":[["debug-sketch"]]},{"active":true,"id":"debug-sketch","type":"debug","wires":[]}]

@@ -1,0 +1,4 @@
+# ACL for the TEST broker: demo-publisher may only publish sensor readings.
+user demo-publisher
+topic write sensors/#
+topic deny #
