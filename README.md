@@ -11,7 +11,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **Mosquitto cookbook** for MQTT broker setup, listeners, and pub/sub patterns. Patterns are drawn from the ZQM fleet's Mosquitto 2.1.2 installs. Honest caveat: broker authentication is an open fleet decision — Node-1 runs allow-anonymous on port 18883 (1883 sits in an excluded range) while Node-3 is localhost-only. This cookbook does not present allow-anonymous as settled policy; the auth pass lands when the decision does. It is intended for Engineers who move sensor and service messages over MQTT. Validate each pattern against your own data, software versions, and operating environment before adopting it.
+A **Mosquitto cookbook** for MQTT broker setup, listeners, and pub/sub patterns. Patterns are drawn from the ZQM fleet's Mosquitto 2.1.2 installs (as of Oct 2026; verify against the current fleet). Honest caveat: broker authentication is an open fleet decision — Node-1 runs allow-anonymous on port 18883 (1883 sits in an excluded range) while Node-3 is localhost-only. This cookbook does not present allow-anonymous as settled policy; the auth pass lands when the decision does. It is intended for Engineers who move sensor and service messages over MQTT. Validate each pattern against your own data, software versions, and operating environment before adopting it.
 
 ## Repository role and status
 
